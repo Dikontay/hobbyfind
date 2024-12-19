@@ -17,10 +17,10 @@
           <mxGeometry x="590.5" y="300" width="67.5" height="81" as="geometry" />
         </mxCell>
         <mxCell id="UwGBYlB62zekXMj5KIBy-6" value="" style="aspect=fixed;sketch=0;html=1;dashed=0;whitespace=wrap;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon2;kubernetesLabel=1;prIcon=api" parent="1" vertex="1">
-          <mxGeometry x="370" y="512" width="80" height="76.8" as="geometry" />
+          <mxGeometry x="385" y="512" width="80" height="76.8" as="geometry" />
         </mxCell>
         <mxCell id="UwGBYlB62zekXMj5KIBy-7" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/databases/Azure_Database_PostgreSQL_Server.svg;" parent="1" vertex="1">
-          <mxGeometry x="610" y="524.8" width="48" height="64" as="geometry" />
+          <mxGeometry x="600.25" y="524.8" width="48" height="64" as="geometry" />
         </mxCell>
         <mxCell id="feQHXw3CqpQp4v3quzRs-2" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
           <mxGeometry x="20" y="300" width="30" height="60" as="geometry" />
@@ -32,7 +32,7 @@
           <mxGeometry x="395" y="404" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="feQHXw3CqpQp4v3quzRs-8" value="REPOSITORY" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="365" y="610" width="60" height="30" as="geometry" />
+          <mxGeometry x="395" y="600" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="feQHXw3CqpQp4v3quzRs-9" value="" style="aspect=fixed;sketch=0;html=1;dashed=0;whitespace=wrap;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon2;kubernetesLabel=1;prIcon=api" vertex="1" parent="1">
           <mxGeometry x="385" y="70" width="80" height="76.8" as="geometry" />
@@ -69,6 +69,9 @@
         </mxCell>
         <mxCell id="feQHXw3CqpQp4v3quzRs-20" value="CLIENTS REPO" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="604" y="168" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="feQHXw3CqpQp4v3quzRs-22" value="CLIENTS DB" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="744" y="168" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
