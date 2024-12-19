@@ -16,12 +16,6 @@
         <mxCell id="UwGBYlB62zekXMj5KIBy-5" value="" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.elasticsearch_service;fillColor=#F58534;gradientColor=none;" parent="1" vertex="1">
           <mxGeometry x="776.25" y="320" width="67.5" height="81" as="geometry" />
         </mxCell>
-        <mxCell id="UwGBYlB62zekXMj5KIBy-6" value="" style="aspect=fixed;sketch=0;html=1;dashed=0;whitespace=wrap;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon2;kubernetesLabel=1;prIcon=api" parent="1" vertex="1">
-          <mxGeometry x="600.25" y="502.2" width="80" height="76.8" as="geometry" />
-        </mxCell>
-        <mxCell id="UwGBYlB62zekXMj5KIBy-7" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/databases/Azure_Database_PostgreSQL_Server.svg;" parent="1" vertex="1">
-          <mxGeometry x="776" y="515" width="48" height="64" as="geometry" />
-        </mxCell>
         <mxCell id="feQHXw3CqpQp4v3quzRs-2" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
           <mxGeometry x="20" y="300" width="30" height="60" as="geometry" />
         </mxCell>
@@ -30,9 +24,6 @@
         </mxCell>
         <mxCell id="feQHXw3CqpQp4v3quzRs-7" value="ELASTIC SEARCH API" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="610.25" y="404" width="60" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="feQHXw3CqpQp4v3quzRs-8" value="REPOSITORY" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="610.25" y="590" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="feQHXw3CqpQp4v3quzRs-9" value="" style="aspect=fixed;sketch=0;html=1;dashed=0;whitespace=wrap;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon2;kubernetesLabel=1;prIcon=api" vertex="1" parent="1">
           <mxGeometry x="600.25" y="76.4" width="80" height="76.8" as="geometry" />
@@ -74,25 +65,25 @@
           <mxGeometry x="1104" y="160" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="feQHXw3CqpQp4v3quzRs-27" value="" style="aspect=fixed;sketch=0;html=1;dashed=0;whitespace=wrap;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon2;kubernetesLabel=1;prIcon=api" vertex="1" parent="1">
-          <mxGeometry x="600.25" y="676.4" width="80" height="76.8" as="geometry" />
+          <mxGeometry x="590" y="496.4" width="80" height="76.8" as="geometry" />
         </mxCell>
         <mxCell id="feQHXw3CqpQp4v3quzRs-28" value="Booking servie" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="610.25" y="776.4" width="60" height="30" as="geometry" />
+          <mxGeometry x="600" y="610" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="feQHXw3CqpQp4v3quzRs-29" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/databases/Azure_Database_PostgreSQL_Server.svg;" vertex="1" parent="1">
-          <mxGeometry x="940" y="676.4" width="48" height="64" as="geometry" />
+          <mxGeometry x="929.75" y="496.4" width="48" height="64" as="geometry" />
         </mxCell>
         <mxCell id="feQHXw3CqpQp4v3quzRs-31" value="" style="aspect=fixed;sketch=0;html=1;dashed=0;whitespace=wrap;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon2;kubernetesLabel=1;prIcon=api" vertex="1" parent="1">
-          <mxGeometry x="770" y="670" width="80" height="76.8" as="geometry" />
+          <mxGeometry x="759.75" y="490" width="80" height="76.8" as="geometry" />
         </mxCell>
         <mxCell id="feQHXw3CqpQp4v3quzRs-32" value="SUBSCRIPTION&lt;div&gt;REPOSITORY&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="760" y="758" width="100" height="52" as="geometry" />
+          <mxGeometry x="753.75" y="599" width="100" height="52" as="geometry" />
         </mxCell>
         <mxCell id="feQHXw3CqpQp4v3quzRs-33" value="SUBSCRIPTION DB" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="914" y="758" width="100" height="52" as="geometry" />
+          <mxGeometry x="890" y="600" width="100" height="52" as="geometry" />
         </mxCell>
         <mxCell id="feQHXw3CqpQp4v3quzRs-34" value="" style="points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;fillColor=#FF6A00;strokeColor=none;shape=mxgraph.alibaba_cloud.mq_message_queue;" vertex="1" parent="1">
-          <mxGeometry x="380" y="610" width="72.11" height="79.8" as="geometry" />
+          <mxGeometry x="400" y="460" width="72.11" height="79.8" as="geometry" />
         </mxCell>
         <mxCell id="feQHXw3CqpQp4v3quzRs-36" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.021;entryY=0.634;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="feQHXw3CqpQp4v3quzRs-11">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
