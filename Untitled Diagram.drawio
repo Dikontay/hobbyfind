@@ -14,7 +14,7 @@
           <mxGeometry x="600.25" y="302.09999999999997" width="80" height="76.8" as="geometry" />
         </mxCell>
         <mxCell id="UwGBYlB62zekXMj5KIBy-5" value="" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.elasticsearch_service;fillColor=#F58534;gradientColor=none;" parent="1" vertex="1">
-          <mxGeometry x="766.25" y="300" width="67.5" height="81" as="geometry" />
+          <mxGeometry x="776.25" y="320" width="67.5" height="81" as="geometry" />
         </mxCell>
         <mxCell id="UwGBYlB62zekXMj5KIBy-6" value="" style="aspect=fixed;sketch=0;html=1;dashed=0;whitespace=wrap;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon2;kubernetesLabel=1;prIcon=api" parent="1" vertex="1">
           <mxGeometry x="600.25" y="502.2" width="80" height="76.8" as="geometry" />
@@ -41,7 +41,7 @@
           <mxGeometry x="610.25" y="160" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="feQHXw3CqpQp4v3quzRs-11" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/databases/Azure_Database_PostgreSQL_Server.svg;" vertex="1" parent="1">
-          <mxGeometry x="940" y="76.39999999999998" width="48" height="64" as="geometry" />
+          <mxGeometry x="1110" y="82.79999999999998" width="48" height="64" as="geometry" />
         </mxCell>
         <mxCell id="feQHXw3CqpQp4v3quzRs-13" value="" style="points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;fillColor=#FF6A00;strokeColor=none;shape=mxgraph.alibaba_cloud.prometheus;" vertex="1" parent="1">
           <mxGeometry x="184.55" y="111.1" width="48.9" height="48.9" as="geometry" />
@@ -68,10 +68,10 @@
           <mxGeometry x="760" y="76.4" width="80" height="76.8" as="geometry" />
         </mxCell>
         <mxCell id="feQHXw3CqpQp4v3quzRs-20" value="CLIENTS REPO" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="760" y="168" width="60" height="30" as="geometry" />
+          <mxGeometry x="773.75" y="170" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="feQHXw3CqpQp4v3quzRs-22" value="CLIENTS DB" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="934" y="160" width="60" height="30" as="geometry" />
+          <mxGeometry x="1104" y="160" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="feQHXw3CqpQp4v3quzRs-27" value="" style="aspect=fixed;sketch=0;html=1;dashed=0;whitespace=wrap;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon2;kubernetesLabel=1;prIcon=api" vertex="1" parent="1">
           <mxGeometry x="600.25" y="676.4" width="80" height="76.8" as="geometry" />
@@ -92,7 +92,28 @@
           <mxGeometry x="914" y="758" width="100" height="52" as="geometry" />
         </mxCell>
         <mxCell id="feQHXw3CqpQp4v3quzRs-34" value="" style="points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;fillColor=#FF6A00;strokeColor=none;shape=mxgraph.alibaba_cloud.mq_message_queue;" vertex="1" parent="1">
-          <mxGeometry x="353" y="290.1" width="72.11" height="79.8" as="geometry" />
+          <mxGeometry x="380" y="610" width="72.11" height="79.8" as="geometry" />
+        </mxCell>
+        <mxCell id="feQHXw3CqpQp4v3quzRs-36" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.021;entryY=0.634;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="feQHXw3CqpQp4v3quzRs-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="833.75" y="120" as="sourcePoint" />
+            <mxPoint x="883.75" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="feQHXw3CqpQp4v3quzRs-37" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.005;entryY=0.63;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.995;exitY=0.63;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="feQHXw3CqpQp4v3quzRs-9" target="feQHXw3CqpQp4v3quzRs-19">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="680.25" y="126.4" as="sourcePoint" />
+            <mxPoint x="730.25" y="76.4" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="feQHXw3CqpQp4v3quzRs-38" value="checkUser()&lt;div&gt;getUser()&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="919" y="153.2" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="feQHXw3CqpQp4v3quzRs-39" value="auth()" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="676.25" y="140" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="feQHXw3CqpQp4v3quzRs-40" value="" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Cache_Redis_Product.svg;" vertex="1" parent="1">
+          <mxGeometry x="940" y="93.80000000000001" width="50" height="42" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
