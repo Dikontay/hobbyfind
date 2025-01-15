@@ -1,0 +1,7 @@
+{
+  "http_port": "$HTTP_PORT",
+  "base_path" : "api",
+  "app":{
+    "body_limit": "$BODY_LIMIT",
+  }
+}
