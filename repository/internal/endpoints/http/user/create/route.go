@@ -17,6 +17,6 @@ func Route() *fiber.Route {
 	return &fiber.Route{
 		Method:   "POST",
 		Handlers: Handlers,
-		Path:     "/api/create/",
+		Path:     "/create",
 	}
 }

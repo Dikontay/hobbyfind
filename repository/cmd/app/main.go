@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"github.com/gofiber/fiber/v3"
 	app2 "project/internal/app"
 )
@@ -12,5 +13,8 @@ func main() {
 		App:      fiber.Config{},
 	})
 
-	app.Start()
+	err := app.Start()
+	if err != nil {
+		fmt.Println(err)
+	}
 }

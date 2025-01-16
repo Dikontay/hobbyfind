@@ -1,4 +1,4 @@
-package cassandra
+package migration
 
 type Configs struct {
 	Host     string `json:"host"`

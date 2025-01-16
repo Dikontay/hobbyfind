@@ -27,7 +27,7 @@ func (s service) SetupRoutes() {
 }
 
 func (s service) Start() error {
-
+	s.SetupRoutes()
 	return s.app.Listen(s.configs.Port)
 }
 

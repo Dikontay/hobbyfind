@@ -1,4 +1,4 @@
-package cassandra
+package migration
 
 type service struct {
 	configs Configs
