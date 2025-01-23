@@ -1,8 +1,11 @@
 package cassandra
 
+import (
+	"project/internal/services/cassandra/migration"
+	"project/internal/services/cassandra/session"
+)
+
 type Configs struct {
-	Host     string `json:"host"`
-	KeySpace string `json:"key_space"`
-	Username string `json:"username"`
-	Password string `json:"password"`
+	Session   session.Configs   `json:"session"`
+	Migration migration.Configs `json:"migration"`
 }
