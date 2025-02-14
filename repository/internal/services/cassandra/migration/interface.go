@@ -3,5 +3,5 @@ package migration
 import "github.com/gocql/gocql"
 
 type Service interface {
-	Start(session *gocql.Session, keyspace string, dbName string) error
+	Start(session *gocql.Session, keyspace string) error
 }

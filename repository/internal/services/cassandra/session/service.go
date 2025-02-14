@@ -7,7 +7,7 @@ import (
 
 type service struct {
 	configs Configs
-	*gocql.Session
+	session *gocql.Session
 }
 
 func NewService(configs Configs) Service {
@@ -16,8 +16,9 @@ func NewService(configs Configs) Service {
 	}
 }
 
-func (s service) Init() error {
+func (s *service) Init() error {
 	cluster := gocql.NewCluster(s.configs.Host)
+	cluster.Port = s.configs.Port
 	cluster.Keyspace = s.configs.KeySpace
 	cluster.Consistency = gocql.Quorum
 	cluster.Authenticator = gocql.PasswordAuthenticator{
@@ -25,19 +26,26 @@ func (s service) Init() error {
 		Password: s.configs.Password,
 	}
 
-	session, err := cluster.CreateSession()
+	var err error
+
+	s.session, err = cluster.CreateSession()
 	if err != nil {
 		return fmt.Errorf("failed to create session: %v", err)
 	}
-	s.Session = session
+
 	return nil
 
 }
-func (s service) GetSession() *gocql.Session {
-	return s.Session
+
+// todo COMPLETE IT
+func (s *service) GetSession() *gocql.Session {
+	if s.session == nil {
+		panic("session is not initialized")
+	}
+	return s.session
 }
 
-func (s service) Stop() error {
-	s.Session.Close()
+func (s *service) Stop() error {
+	s.session.Close()
 	return nil
 }

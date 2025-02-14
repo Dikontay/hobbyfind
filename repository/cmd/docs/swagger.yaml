@@ -1,0 +1,82 @@
+basePath: /api/
+definitions:
+  create.Params:
+    properties:
+      email:
+        type: string
+      fullname:
+        type: string
+      name:
+        type: string
+      password:
+        type: string
+      phone:
+        type: string
+    type: object
+  create.Response:
+    properties:
+      user:
+        $ref: '#/definitions/models.User'
+    type: object
+  github_com_gofiber_fiber_v3.Error:
+    properties:
+      code:
+        type: integer
+      message:
+        type: string
+    type: object
+  models.User:
+    properties:
+      created_at:
+        type: string
+      deleted_at:
+        type: string
+      email:
+        type: string
+      fullname:
+        type: string
+      id:
+        type: string
+      name:
+        type: string
+      password:
+        type: string
+      phone:
+        type: string
+      updated_at:
+        type: string
+    type: object
+info:
+  contact: {}
+  description: Swagger API for some api.
+  termsOfService: http://swagger.io/terms/
+  title: Swagger API
+  version: "1.0"
+paths:
+  /api/users:
+    post:
+      consumes:
+      - application/json
+      description: Long-description
+      parameters:
+      - description: Request Params
+        in: body
+        name: body
+        required: true
+        schema:
+          $ref: '#/definitions/create.Params'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/create.Response'
+        default:
+          description: ""
+          schema:
+            $ref: '#/definitions/github_com_gofiber_fiber_v3.Error'
+      summary: summary
+      tags:
+      - Users
+swagger: "2.0"

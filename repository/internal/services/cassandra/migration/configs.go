@@ -1,5 +1,5 @@
 package migration
 
 type Configs struct {
-	MigrationsFilePath string `json:"migrations_file_path"`
+	FilePath string `json:"file_path"`
 }

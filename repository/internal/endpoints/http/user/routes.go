@@ -8,7 +8,7 @@ import (
 func GetRoutes() []*fiber.Route {
 
 	return []*fiber.Route{
-		create.Route(),
+		create.Endpoint(),
 	}
 
 }

@@ -4,6 +4,8 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/gofiber/fiber/v3"
+	"project/internal/domain/models"
+	"project/internal/services"
 )
 
 var Handlers = []fiber.Handler{parseParams(), create()}
@@ -24,7 +26,17 @@ func parseParams() fiber.Handler {
 func create() fiber.Handler {
 	return func(ctx fiber.Ctx) error {
 		params := ctx.Locals("params").(Params)
-		fmt.Println(params)
-		return ctx.SendString("got request")
+
+		user := models.User{
+			AuthProperties:     params.AuthProperties,
+			UserAdditionalInfo: params.UserAdditionalInfo,
+		}
+
+		createdUser, err := services.Repository().CreateUser(user)
+		if err != nil {
+			return fmt.Errorf("failed to create user: %v", err)
+		}
+
+		return ctx.JSON(createdUser)
 	}
 }

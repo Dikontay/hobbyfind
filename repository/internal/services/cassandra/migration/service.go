@@ -5,7 +5,7 @@ import (
 	"github.com/gocql/gocql"
 	"github.com/golang-migrate/migrate/v4"
 	"github.com/golang-migrate/migrate/v4/database/cassandra"
-	_ "github.com/golang-migrate/migrate/v4/database/cassandra"
+	_ "github.com/golang-migrate/migrate/v4/source/file"
 )
 
 type service struct {
@@ -17,16 +17,16 @@ func NewService(configs Configs) Service {
 		configs: configs,
 	}
 }
-func (s service) Start(session *gocql.Session, keyspace string, dbName string) error {
+func (s service) Start(session *gocql.Session, keyspace string) error {
 	driver, err := cassandra.WithInstance(session, &cassandra.Config{
 		KeyspaceName:    keyspace,
 		MigrationsTable: "db_migrations",
 	})
+
 	if err != nil {
 		return fmt.Errorf("failed to create driver for migration: %v", err)
 	}
-	migration, err := migrate.NewWithDatabaseInstance("file://migrations", dbName, driver)
-
+	migration, err := migrate.NewWithDatabaseInstance("file://migration", keyspace, driver)
 	if err != nil {
 		return fmt.Errorf("failed to init DB migrations. %+v", err)
 	}

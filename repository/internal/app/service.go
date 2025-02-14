@@ -1,8 +1,12 @@
 package app
 
 import (
-	"github.com/gofiber/fiber/v3"
+	"fmt"
+	"github.com/gofiber/fiber/v2"
+	"github.com/gofiber/swagger"
 	"project/internal/endpoints/http/user"
+	"project/internal/services"
+	"project/utils"
 )
 
 type service struct {
@@ -19,15 +23,30 @@ func NewService(configs Configs) Service {
 
 func (s service) SetupRoutes() {
 
+	s.app.Get(s.configs.Swagger.Path, swagger.HandlerDefault)
+	s.app.Get(fmt.Sprintf("%s/*", s.configs.Swagger.Path), swagger.New(s.configs.Swagger))
+
 	userRoutes := user.GetRoutes()
 	for _, route := range userRoutes {
-		s.app.Group(s.configs.BasePath).Group(route.Path, route.Handlers...)
+		s.app.Group(s.configs.BasePath).Group(route.Path, route.Handlers)
 	}
 	return
 }
 
 func (s service) Start() error {
 	s.SetupRoutes()
+
+	servicesConfigs := services.Configs{}
+
+	err := utils.InitConfigs("./configs/configs.json", &servicesConfigs)
+	if err != nil {
+		return fmt.Errorf("failed to init configs: %v", err)
+	}
+
+	err = services.Init(servicesConfigs)
+	if err != nil {
+		return fmt.Errorf("failed to init services: %v", err)
+	}
 	return s.app.Listen(s.configs.Port)
 }
 

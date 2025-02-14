@@ -8,15 +8,14 @@ import "github.com/gofiber/fiber/v3"
 // @Tags        Users
 // @Produce     json
 // @Accept 		json
-// @Param       body body params.Main  true "Request Params"
-// @Success     200  {object} info.Main
-// @Failure     default  {object} responses.ErrorResponse
-// @Router      /api/create/ [post]
-
-func Route() *fiber.Route {
+// @Param       body body Params  true "Request Params"
+// @Success     200  {object} Response
+// @Failure     default  {object} fiber.Error
+// @Router      /api/users [post]
+func Endpoint() *fiber.Route {
 	return &fiber.Route{
 		Method:   "POST",
 		Handlers: Handlers,
-		Path:     "/create",
+		Path:     "/users",
 	}
 }

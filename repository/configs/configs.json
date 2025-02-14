@@ -1,5 +1,14 @@
 {
   "cassandra" : {
-
+"session" : {
+    "keyspace" : "",
+    "host" : "",
+    "port" :"" ,
+    "username" : "",
+    "password" : ""
+},
+    "migration" : {
+    "file_path" : ""
+    }
   }
 }

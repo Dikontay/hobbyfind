@@ -29,17 +29,30 @@ func (s service) Init() error {
 		return fmt.Errorf("failed to init session: %v", err)
 	}
 
-	err = s.migration.Start(s.session.GetSession(), s.configs.Session.KeySpace, s.configs.Session.DbName)
+	err = s.migration.Start(s.session.GetSession(), s.configs.Session.KeySpace)
 	if err != nil {
 		return fmt.Errorf("failed to init migration: %v", err)
 	}
 	return nil
 }
 
-func (s service) CreateUser(user models.User) (models.User, error) {
-	query := &gocql.Query{}
-	qb.Insert(s.configs.Session.DbName).Columns("id", "name", "email", "password").ToCql(query)
+func (s service) CreateUser(user models.User) (*models.User, error) {
+	id, err := gocql.RandomUUID()
+	if err != nil {
+		return nil, fmt.Errorf("Failed to generate UUID: %v", err)
+	}
 
+	user.ID = id.String()
+
+	dbSession := s.session.GetSession()
+	stmt, names := qb.Insert("users").Columns(
+		"id", "name", "email", "fullname", "phone", "password").ToCql()
+
+	if err = dbSession.Query(stmt, names).Bind(user).Exec(); err != nil {
+		return nil, fmt.Errorf("Failed to insert user: %v", err)
+	}
+
+	return &user, nil
 }
 
 func (s service) ReadUser(id string) (models.User, error) {
