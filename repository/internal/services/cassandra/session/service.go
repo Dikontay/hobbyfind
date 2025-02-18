@@ -3,6 +3,7 @@ package session
 import (
 	"fmt"
 	"github.com/gocql/gocql"
+	"strconv"
 )
 
 type service struct {
@@ -18,15 +19,19 @@ func NewService(configs Configs) Service {
 
 func (s *service) Init() error {
 	cluster := gocql.NewCluster(s.configs.Host)
-	cluster.Port = s.configs.Port
+	var err error
+
+	port, err := strconv.Atoi(s.configs.Port)
+	if err != nil {
+		return fmt.Errorf("failed to convert port to int: %v", err)
+	}
+	cluster.Port = port
 	cluster.Keyspace = s.configs.KeySpace
 	cluster.Consistency = gocql.Quorum
 	cluster.Authenticator = gocql.PasswordAuthenticator{
 		Username: s.configs.Username,
 		Password: s.configs.Password,
 	}
-
-	var err error
 
 	s.session, err = cluster.CreateSession()
 	if err != nil {

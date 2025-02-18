@@ -7,6 +7,7 @@ import (
 	"project/internal/domain/models"
 	"project/internal/services/cassandra/migration"
 	"project/internal/services/cassandra/session"
+	"time"
 )
 
 type service struct {
@@ -39,25 +40,42 @@ func (s service) Init() error {
 func (s service) CreateUser(user models.User) (*models.User, error) {
 	id, err := gocql.RandomUUID()
 	if err != nil {
-		return nil, fmt.Errorf("Failed to generate UUID: %v", err)
+		return nil, fmt.Errorf("failed to generate UUID: %v", err)
 	}
 
 	user.ID = id.String()
 
 	dbSession := s.session.GetSession()
 	stmt, names := qb.Insert("users").Columns(
-		"id", "name", "email", "fullname", "phone", "password").ToCql()
+		"id", "name", "email", "fullname", "phone", "password", "created_at").ToCql()
 
-	if err = dbSession.Query(stmt, names).Bind(user).Exec(); err != nil {
-		return nil, fmt.Errorf("Failed to insert user: %v", err)
+	user.CreatedAt = new(time.Time)
+	*user.CreatedAt = time.Now()
+
+	query := dbSession.
+		Query(stmt, names).
+		Bind(user.ID, user.Username, user.Email, user.Fullname, user.Phone, user.Password, user.CreatedAt)
+
+	if err = query.Exec(); err != nil {
+		return nil, fmt.Errorf("failed to insert user: %v", err)
 	}
 
 	return &user, nil
 }
 
 func (s service) ReadUser(id string) (models.User, error) {
-	//TODO implement me
-	panic("implement me")
+
+	dbSession := s.session.GetSession()
+	stmt, names := qb.Select("users").Where(qb.Eq("id")).ToCql()
+
+	user := models.User{}
+	query := dbSession.Query(stmt, names).Bind(id)
+	err := query.Scan(&user)
+	if err != nil {
+		return models.User{}, fmt.Errorf("failed to get user: %v", err)
+	}
+
+	return user, nil
 }
 
 func (s service) UpdateUser(user models.User) (models.User, error) {

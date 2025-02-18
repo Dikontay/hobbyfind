@@ -1,5 +1,5 @@
 {
-  "http_port": "$HTTP_PORT",
+  "http_port": "8080",
   "base_path" : "api",
   "app":{
     "body_limit": "$BODY_LIMIT"
