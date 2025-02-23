@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36" version="26.0.16">
   <diagram name="Page-1" id="qcjHH5lsIiazsaa5W-ul">
-    <mxGraphModel dx="4270" dy="3380" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="3415" dy="2810" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <object label="" id="0">
           <mxCell />
@@ -254,9 +254,6 @@
         </mxCell>
         <mxCell id="JZDSqkAnThd7MCSSOPGy-17" value="if not found in cache go to db" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1370" y="318.9" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="JZDSqkAnThd7MCSSOPGy-30" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1560" y="520" width="890" height="490" as="geometry" />
         </mxCell>
         <mxCell id="JZDSqkAnThd7MCSSOPGy-31" value="" style="points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;fillColor=#FF6A00;strokeColor=none;shape=mxgraph.alibaba_cloud.cassandra_wide-column_database_02;" vertex="1" parent="1">
           <mxGeometry x="2215" y="598.3000000000001" width="166.61" height="178.3" as="geometry" />
