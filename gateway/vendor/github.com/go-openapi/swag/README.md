@@ -4,9 +4,9 @@
 [![GoDoc](https://godoc.org/github.com/go-openapi/swag?status.svg)](http://godoc.org/github.com/go-openapi/swag)
 [![Go Report Card](https://goreportcard.com/badge/github.com/go-openapi/swag)](https://goreportcard.com/report/github.com/go-openapi/swag)
 
-Contains a bunch of helper functions for go-openapi and go-swagger projects.
+Contains a bunch of helper functions for go-openapi and go-swagger github.com/Dikontay/hobbyfind/gateways.
 
-You may also use it standalone for your projects.
+You may also use it standalone for your github.com/Dikontay/hobbyfind/gateways.
 
 * convert between value and pointers for builtin types
 * convert from string to builtin types (wraps strconv)

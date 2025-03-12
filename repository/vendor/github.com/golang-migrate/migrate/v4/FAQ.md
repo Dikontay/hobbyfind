@@ -72,8 +72,8 @@ Database-specific locking features are used by *some* database drivers to preven
 #### Do I need to create a table for tracking migration version used?
 No, it is done automatically.
 
-#### Can I use migrate with a non-Go project?
-Yes, you can use the migrate CLI in a non-Go project, but there are probably other libraries/frameworks available that offer better test and deploy integrations in that language/framework.
+#### Can I use migrate with a non-Go github.com/Dikontay/hobbyfind/repository?
+Yes, you can use the migrate CLI in a non-Go github.com/Dikontay/hobbyfind/repository, but there are probably other libraries/frameworks available that offer better test and deploy integrations in that language/framework.
 
 #### I have got an error `Dirty database version 1. Fix and force version`. What should I do?
 Keep calm and refer to [the getting started docs](GETTING_STARTED.md#forcing-your-database-version).

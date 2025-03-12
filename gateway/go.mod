@@ -1,4 +1,4 @@
-module project
+module github.com/Dikontay/hobbyfind/gateway
 
 go 1.23.4
 

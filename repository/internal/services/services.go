@@ -1,6 +1,6 @@
 package services
 
-import "project/internal/services/cassandra"
+import "github.com/Dikontay/hobbyfind/repository/internal/services/cassandra"
 
 var cass cassandra.Service
 

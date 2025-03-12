@@ -2,7 +2,7 @@ package services
 
 import (
 	"fmt"
-	"project/internal/services/cassandra"
+	"github.com/Dikontay/hobbyfind/gateway/internal/services/cassandra"
 )
 
 func Init(configs Configs) error {

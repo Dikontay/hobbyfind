@@ -2,11 +2,11 @@ package cassandra
 
 import (
 	"fmt"
+	"github.com/Dikontay/hobbyfind/repository/internal/domain/models"
+	"github.com/Dikontay/hobbyfind/repository/internal/services/cassandra/migration"
+	"github.com/Dikontay/hobbyfind/repository/internal/services/cassandra/session"
 	"github.com/gocql/gocql"
 	"github.com/scylladb/gocqlx/v2/qb"
-	"project/internal/domain/models"
-	"project/internal/services/cassandra/migration"
-	"project/internal/services/cassandra/session"
 	"time"
 )
 

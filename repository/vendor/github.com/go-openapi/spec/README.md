@@ -1,7 +1,7 @@
 # OAI object model
 
 [![Build Status](https://travis-ci.org/go-openapi/spec.svg?branch=master)](https://travis-ci.org/go-openapi/spec)
-<!-- [![Build status](https://ci.appveyor.com/api/projects/status/x377t5o9ennm847o/branch/master?svg=true)](https://ci.appveyor.com/project/casualjim/go-openapi/spec/branch/master) -->
+<!-- [![Build status](https://ci.appveyor.com/api/github.com/Dikontay/hobbyfind/repositorys/status/x377t5o9ennm847o/branch/master?svg=true)](https://ci.appveyor.com/github.com/Dikontay/hobbyfind/repository/casualjim/go-openapi/spec/branch/master) -->
 [![codecov](https://codecov.io/gh/go-openapi/spec/branch/master/graph/badge.svg)](https://codecov.io/gh/go-openapi/spec)
 [![Slack Status](https://slackin.goswagger.io/badge.svg)](https://slackin.goswagger.io)
 [![license](http://img.shields.io/badge/license-Apache%20v2-orange.svg)](https://raw.githubusercontent.com/go-openapi/spec/master/LICENSE)

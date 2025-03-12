@@ -1,8 +1,8 @@
 package cassandra
 
 import (
-	"project/internal/services/cassandra/migration"
-	"project/internal/services/cassandra/session"
+	"github.com/Dikontay/hobbyfind/gateway/internal/services/cassandra/migration"
+	"github.com/Dikontay/hobbyfind/gateway/internal/services/cassandra/session"
 )
 
 type Configs struct {

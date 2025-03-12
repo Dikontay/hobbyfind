@@ -17,7 +17,7 @@ go get github.com/KyleBanks/depth/cmd/depth
 
 ## Usage
 
-`depth` can be used as a standalone command-line application, or as a package within your own project.
+`depth` can be used as a standalone command-line application, or as a package within your own github.com/Dikontay/hobbyfind/gateway.
 
 ### Command-Line
 
@@ -193,7 +193,7 @@ $ depth -json github.com/KyleBanks/depth/cmd/depth
 
 ### Integrating With Your Project
 
-The `depth` package can easily be used to retrieve the dependency tree for a particular package in your own project. For example, here's how you would retrieve the dependency tree for the `strings` package:
+The `depth` package can easily be used to retrieve the dependency tree for a particular package in your own github.com/Dikontay/hobbyfind/gateway. For example, here's how you would retrieve the dependency tree for the `strings` package:
 
 ```go
 import "github.com/KyleBanks/depth"

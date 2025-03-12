@@ -43,7 +43,7 @@ See the full example in [example_test.go](example_test.go).
 
 Copyright (C) 2019 ScyllaDB
 
-This project is distributed under the Apache 2.0 license. See the [LICENSE](https://github.com/scylladb/go-reflectx/blob/master/LICENSE) file for details.
+This github.com/Dikontay/hobbyfind/gateway is distributed under the Apache 2.0 license. See the [LICENSE](https://github.com/scylladb/go-reflectx/blob/master/LICENSE) file for details.
 It contains software from:
 
-* [sqlx project](https://github.com/jmoiron/sqlx), licensed under the MIT license
+* [sqlx github.com/Dikontay/hobbyfind/gateway](https://github.com/jmoiron/sqlx), licensed under the MIT license

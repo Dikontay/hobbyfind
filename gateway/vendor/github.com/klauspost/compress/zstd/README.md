@@ -25,7 +25,7 @@ Install using `go get -u github.com/klauspost/compress`. The package is located 
 ### Status: 
 
 STABLE - there may always be subtle bugs, a wide variety of content has been tested and the library is actively 
-used by several projects. This library is being [fuzz-tested](https://github.com/klauspost/compress-fuzz) for all updates.
+used by several github.com/Dikontay/hobbyfind/gateways. This library is being [fuzz-tested](https://github.com/klauspost/compress-fuzz) for all updates.
 
 There may still be specific combinations of data types/size/settings that could lead to edge cases, 
 so as always, testing is recommended.  
@@ -88,7 +88,7 @@ compression settings can be specified.
 
 #### Future Compatibility Guarantees
 
-This will be an evolving project. When using this package it is important to note that both the compression efficiency and speed may change.
+This will be an evolving github.com/Dikontay/hobbyfind/gateway. When using this package it is important to note that both the compression efficiency and speed may change.
 
 The goal will be to keep the default efficiency at the default zstd (level 3). 
 However the encoding should never be assumed to remain the same, 

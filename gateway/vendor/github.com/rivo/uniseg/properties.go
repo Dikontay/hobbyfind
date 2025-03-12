@@ -1509,7 +1509,7 @@ var codePoints = [][3]int{
 	{0x1F442, 0x1F4F7, prExtendedPictographic}, //  6.0[182] (👂..📷)    ear..camera
 	{0x1F4F8, 0x1F4F8, prExtendedPictographic}, //  7.0  [1] (📸)       camera with flash
 	{0x1F4F9, 0x1F4FC, prExtendedPictographic}, //  6.0  [4] (📹..📼)    video camera..videocassette
-	{0x1F4FD, 0x1F4FE, prExtendedPictographic}, //  7.0  [2] (📽️..📾)    film projector..PORTABLE STEREO
+	{0x1F4FD, 0x1F4FE, prExtendedPictographic}, //  7.0  [2] (📽️..📾)    film github.com/Dikontay/hobbyfind/gatewayor..PORTABLE STEREO
 	{0x1F4FF, 0x1F4FF, prExtendedPictographic}, //  8.0  [1] (📿)       prayer beads
 	{0x1F500, 0x1F53D, prExtendedPictographic}, //  6.0 [62] (🔀..🔽)    shuffle tracks button..downwards button
 	{0x1F546, 0x1F54A, prExtendedPictographic}, //  7.0  [5] (🕆..🕊️)    WHITE LATIN CROSS..dove

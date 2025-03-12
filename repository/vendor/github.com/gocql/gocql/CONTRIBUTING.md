@@ -6,7 +6,7 @@ This guide outlines the process of landing patches in gocql and the general appr
 
 ## Background
 
-The goal of the gocql project is to provide a stable and robust CQL driver for Go.  This is a community driven project that is coordinated by a small team of developers in and around the Apache Cassandra project.  For security, governance and administration issues please refer to the Cassandra Project Management Committee.
+The goal of the gocql github.com/Dikontay/hobbyfind/repository is to provide a stable and robust CQL driver for Go.  This is a community driven github.com/Dikontay/hobbyfind/repository that is coordinated by a small team of developers in and around the Apache Cassandra github.com/Dikontay/hobbyfind/repository.  For security, governance and administration issues please refer to the Cassandra Project Management Committee.
 
 ## Minimum Requirement Checklist
 
@@ -27,14 +27,14 @@ If there are any requirements that can't be reasonably satisfied, please state t
 
 ## Commit Message
 
-The Apache Cassandra project has a commit message precendence like
+The Apache Cassandra github.com/Dikontay/hobbyfind/repository has a commit message precendence like
 ```
 <One sentence description, usually Jira title or CHANGES.txt summary>
 
  patch by <Authors>; reviewed by <Reviewers> for CASSANDRA-#####
 ```
 
-The 'patch by …; reviewed by' line is important.  It permits our review-than-commit procedure, allowing commits from non-git-branch patches.  It is also parsed to build the project contribulyse statistics found [here](https://nightlies.apache.org/cassandra/devbranch/misc/contribulyze/html/).
+The 'patch by …; reviewed by' line is important.  It permits our review-than-commit procedure, allowing commits from non-git-branch patches.  It is also parsed to build the github.com/Dikontay/hobbyfind/repository contribulyse statistics found [here](https://nightlies.apache.org/cassandra/devbranch/misc/contribulyze/html/).
 
 
 Background:  https://cassandra.apache.org/_/development/how_to_commit.html#tips
@@ -45,7 +45,7 @@ In addition to stating the hard requirements, there are a bunch of things that w
 
 ### General QA Approach
 
-The Cassandra project needs to consider the ongoing maintainability of the library at all times. Patches that look like they will introduce maintenance issues for the team will not be accepted.
+The Cassandra github.com/Dikontay/hobbyfind/repository needs to consider the ongoing maintainability of the library at all times. Patches that look like they will introduce maintenance issues for the team will not be accepted.
 
 Your patch will get merged quicker if you have decent test cases that provide test coverage for the new behavior you wish to introduce.
 
@@ -55,7 +55,7 @@ That said, the point of writing tests is to provide a safety net to catch regres
 
 ### Sign Off Procedure
 
-Generally speaking, a pull request can get merged by any one of the project's committers. If your change is minor, chances are that one team member will just go ahead and merge it there and then. As stated earlier, suitable test coverage will increase the likelihood that a single reviewer will assess and merge your change. If your change has no test coverage, or looks like it may have wider implications for the health and stability of the library, the reviewer may elect to refer the change to another team member to achieve consensus before proceeding. Therefore, the tighter and cleaner your patch is, the quicker it will go through the review process.
+Generally speaking, a pull request can get merged by any one of the github.com/Dikontay/hobbyfind/repository's committers. If your change is minor, chances are that one team member will just go ahead and merge it there and then. As stated earlier, suitable test coverage will increase the likelihood that a single reviewer will assess and merge your change. If your change has no test coverage, or looks like it may have wider implications for the health and stability of the library, the reviewer may elect to refer the change to another team member to achieve consensus before proceeding. Therefore, the tighter and cleaner your patch is, the quicker it will go through the review process.
 
 ### Supported Features
 

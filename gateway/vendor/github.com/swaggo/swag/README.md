@@ -7,14 +7,14 @@
 [![Build Status](https://github.com/swaggo/swag/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/features/actions)
 [![Coverage Status](https://img.shields.io/codecov/c/github/swaggo/swag/master.svg)](https://codecov.io/gh/swaggo/swag)
 [![Go Report Card](https://goreportcard.com/badge/github.com/swaggo/swag)](https://goreportcard.com/report/github.com/swaggo/swag)
-[![codebeat badge](https://codebeat.co/badges/71e2f5e5-9e6b-405d-baf9-7cc8b5037330)](https://codebeat.co/projects/github-com-swaggo-swag-master)
+[![codebeat badge](https://codebeat.co/badges/71e2f5e5-9e6b-405d-baf9-7cc8b5037330)](https://codebeat.co/github.com/Dikontay/hobbyfind/gateways/github-com-swaggo-swag-master)
 [![Go Doc](https://godoc.org/github.com/swaggo/swagg?status.svg)](https://godoc.org/github.com/swaggo/swag)
 [![Backers on Open Collective](https://opencollective.com/swag/backers/badge.svg)](#backers)
-[![Sponsors on Open Collective](https://opencollective.com/swag/sponsors/badge.svg)](#sponsors) [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fswaggo%2Fswag.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fswaggo%2Fswag?ref=badge_shield)
+[![Sponsors on Open Collective](https://opencollective.com/swag/sponsors/badge.svg)](#sponsors) [![FOSSA Status](https://app.fossa.io/api/github.com/Dikontay/hobbyfind/gateways/git%2Bgithub.com%2Fswaggo%2Fswag.svg?type=shield)](https://app.fossa.io/github.com/Dikontay/hobbyfind/gateways/git%2Bgithub.com%2Fswaggo%2Fswag?ref=badge_shield)
 [![Release](https://img.shields.io/github/release/swaggo/swag.svg?style=flat-square)](https://github.com/swaggo/swag/releases)
 
 
-Swag converts Go annotations to Swagger Documentation 2.0. We've created a variety of plugins for popular [Go web frameworks](#supported-web-frameworks). This allows you to quickly integrate with an existing Go project (using Swagger UI).
+Swag converts Go annotations to Swagger Documentation 2.0. We've created a variety of plugins for popular [Go web frameworks](#supported-web-frameworks). This allows you to quickly integrate with an existing Go github.com/Dikontay/hobbyfind/gateway (using Swagger UI).
 
 ## Contents
  - [Getting started](#getting-started)
@@ -46,7 +46,7 @@ Swag converts Go annotations to Swagger Documentation 2.0. We've created a varie
 	- [Add a description for enum items](#add-a-description-for-enum-items)
 	- [Generate only specific docs file types](#generate-only-specific-docs-file-types)
     - [How to use Go generic types](#how-to-use-generics)
-- [About the Project](#about-the-project)
+- [About the Project](#about-the-github.com/Dikontay/hobbyfind/gateway)
 
 ## Getting started
 
@@ -65,7 +65,7 @@ docker run --rm -v $(pwd):/code ghcr.io/swaggo/swag:latest
 
 Or download a pre-compiled binary from the [release page](https://github.com/swaggo/swag/releases).
 
-3. Run `swag init` in the project's root folder which contains the `main.go` file. This will parse your comments and generate the required files (`docs` folder and `docs/docs.go`).
+3. Run `swag init` in the github.com/Dikontay/hobbyfind/gateway's root folder which contains the `main.go` file. This will parse your comments and generate the required files (`docs` folder and `docs/docs.go`).
 ```sh
 swag init
 ```
@@ -960,7 +960,7 @@ The new delimiter is a string with the format "`<left delimiter>`,`<right delimi
 
 If the struct is defined in a dependency package, use `--parseDependency`.
 
-If the struct is defined in your main project, use `--parseInternal`.
+If the struct is defined in your main github.com/Dikontay/hobbyfind/gateway, use `--parseInternal`.
 
 if you want to include both internal and from dependencies use both flags 
 ```
@@ -968,10 +968,10 @@ swag init --parseDependency --parseInternal
 ```
 
 ## About the Project
-This project was inspired by [yvasiyarov/swagger](https://github.com/yvasiyarov/swagger) but we simplified the usage and added support a variety of [web frameworks](#supported-web-frameworks). Gopher image source is [tenntenn/gopher-stickers](https://github.com/tenntenn/gopher-stickers). It has licenses [creative commons licensing](http://creativecommons.org/licenses/by/3.0/deed.en).
+This github.com/Dikontay/hobbyfind/gateway was inspired by [yvasiyarov/swagger](https://github.com/yvasiyarov/swagger) but we simplified the usage and added support a variety of [web frameworks](#supported-web-frameworks). Gopher image source is [tenntenn/gopher-stickers](https://github.com/tenntenn/gopher-stickers). It has licenses [creative commons licensing](http://creativecommons.org/licenses/by/3.0/deed.en).
 ## Contributors
 
-This project exists thanks to all the people who contribute. [[Contribute](CONTRIBUTING.md)].
+This github.com/Dikontay/hobbyfind/gateway exists thanks to all the people who contribute. [[Contribute](CONTRIBUTING.md)].
 <a href="https://github.com/swaggo/swag/graphs/contributors"><img src="https://opencollective.com/swag/contributors.svg?width=890&button=false" /></a>
 
 
@@ -984,7 +984,7 @@ Thank you to all our backers! 🙏 [[Become a backer](https://opencollective.com
 
 ## Sponsors
 
-Support this project by becoming a sponsor. Your logo will show up here with a link to your website. [[Become a sponsor](https://opencollective.com/swag#sponsor)]
+Support this github.com/Dikontay/hobbyfind/gateway by becoming a sponsor. Your logo will show up here with a link to your website. [[Become a sponsor](https://opencollective.com/swag#sponsor)]
 
 <a href="https://opencollective.com/swag/sponsor/0/website" target="_blank"><img src="https://opencollective.com/swag/sponsor/0/avatar.svg"></a>
 <a href="https://opencollective.com/swag/sponsor/1/website" target="_blank"><img src="https://opencollective.com/swag/sponsor/1/avatar.svg"></a>
@@ -1001,4 +1001,4 @@ Support this project by becoming a sponsor. Your logo will show up here with a l
 
 
 ## License
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fswaggo%2Fswag.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fswaggo%2Fswag?ref=badge_large)
+[![FOSSA Status](https://app.fossa.io/api/github.com/Dikontay/hobbyfind/gateways/git%2Bgithub.com%2Fswaggo%2Fswag.svg?type=large)](https://app.fossa.io/github.com/Dikontay/hobbyfind/gateways/git%2Bgithub.com%2Fswaggo%2Fswag?ref=badge_large)

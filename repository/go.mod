@@ -1,4 +1,4 @@
-module project
+module github.com/Dikontay/hobbyfind/repository
 
 go 1.23.4
 

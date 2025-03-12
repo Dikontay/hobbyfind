@@ -3,8 +3,8 @@ package create
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/Dikontay/hobbyfind/repository/internal/services"
 	"github.com/gofiber/fiber/v3"
-	"project/internal/services"
 )
 
 var Handlers = []fiber.Handler{parseParams(), create()}

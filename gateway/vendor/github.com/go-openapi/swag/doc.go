@@ -13,9 +13,9 @@
 // limitations under the License.
 
 /*
-Package swag contains a bunch of helper functions for go-openapi and go-swagger projects.
+Package swag contains a bunch of helper functions for go-openapi and go-swagger github.com/Dikontay/hobbyfind/gateways.
 
-You may also use it standalone for your projects.
+You may also use it standalone for your github.com/Dikontay/hobbyfind/gateways.
 
   * convert between value and pointers for builtin types
   * convert from string to builtin types (wraps strconv)

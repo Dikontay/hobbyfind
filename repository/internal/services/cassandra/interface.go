@@ -1,6 +1,6 @@
 package cassandra
 
-import "project/internal/domain/models"
+import "github.com/Dikontay/hobbyfind/repository/internal/domain/models"
 
 type Service interface {
 	Init() error

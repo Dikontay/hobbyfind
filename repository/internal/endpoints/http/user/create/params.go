@@ -2,8 +2,8 @@ package create
 
 import (
 	"errors"
-	"project/internal/domain/consts"
-	"project/internal/domain/models"
+	"github.com/Dikontay/hobbyfind/repository/internal/domain/consts"
+	"github.com/Dikontay/hobbyfind/repository/internal/domain/models"
 )
 
 type Params struct {

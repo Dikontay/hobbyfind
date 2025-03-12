@@ -1,9 +1,9 @@
 package read
 
 import (
+	"github.com/Dikontay/hobbyfind/repository/internal/services"
+	"github.com/Dikontay/hobbyfind/repository/utils"
 	"github.com/gofiber/fiber/v3"
-	"project/internal/services"
-	"project/utils"
 )
 
 var Handlers = []fiber.Handler{read()}

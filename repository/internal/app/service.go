@@ -2,10 +2,10 @@ package app
 
 import (
 	"fmt"
+	"github.com/Dikontay/hobbyfind/repository/internal/endpoints/http/user"
+	"github.com/Dikontay/hobbyfind/repository/internal/services"
+	"github.com/Dikontay/hobbyfind/repository/utils"
 	"github.com/gofiber/fiber/v3"
-	"project/internal/endpoints/http/user"
-	"project/internal/services"
-	"project/utils"
 )
 
 type service struct {

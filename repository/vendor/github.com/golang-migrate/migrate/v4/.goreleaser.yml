@@ -1,4 +1,4 @@
-project_name: migrate
+github.com/Dikontay/hobbyfind/repository_name: migrate
 before:
   hooks:
     - go mod tidy

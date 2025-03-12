@@ -84,7 +84,7 @@ linters-settings:
         skipBalanced: false
       underef:
         skipRecvDeref: false
-      # NOTE: Set this option to false if other projects rely on this project's code
+      # NOTE: Set this option to false if other github.com/Dikontay/hobbyfind/repositorys rely on this github.com/Dikontay/hobbyfind/repository's code
       # unnamedResult:
         # checkExported: false
 
@@ -219,14 +219,14 @@ linters-settings:
     skip-regexp: "^$"
 
   unparam:
-    # NOTE: Set this option to false if other projects rely on this project's code
+    # NOTE: Set this option to false if other github.com/Dikontay/hobbyfind/repositorys rely on this github.com/Dikontay/hobbyfind/repository's code
     check-exported: false
 
   unused:
     # TODO: Uncomment these two lines
     # parameters-are-used: false
     # local-variables-are-used: false
-    # NOTE: Set these options to true if other projects rely on this project's code
+    # NOTE: Set these options to true if other github.com/Dikontay/hobbyfind/repositorys rely on this github.com/Dikontay/hobbyfind/repository's code
     field-writes-are-uses: true
     # exported-is-used: true # TODO: Fix issues with this option (upstream)
     exported-fields-are-used: true

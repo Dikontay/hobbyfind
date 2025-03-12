@@ -31,6 +31,6 @@ github:
   features:
     wiki: false
     issues: true
-    projects: false
+    github.com/Dikontay/hobbyfind/gateways: false
   autolink_jira:
     - CASSANDRA

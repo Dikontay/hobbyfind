@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
+	app2 "github.com/Dikontay/hobbyfind/gateway/internal/app"
 	"github.com/gofiber/fiber/v3"
-	app2 "project/internal/app"
 )
 
 func main() {

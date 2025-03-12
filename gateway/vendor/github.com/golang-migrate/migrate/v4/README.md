@@ -9,7 +9,7 @@
 
 # migrate
 
-__Database migrations written in Go. Use as [CLI](#cli-usage) or import as [library](#use-in-your-go-project).__
+__Database migrations written in Go. Use as [CLI](#cli-usage) or import as [library](#use-in-your-go-github.com/Dikontay/hobbyfind/gateway).__
 
 * Migrate reads migrations from [sources](#migration-sources)
    and applies them in correct order to a [database](#databases).
@@ -102,7 +102,7 @@ $ docker run -v {{ migration dir }}:/migrations --network host migrate/migrate
     -path=/migrations/ -database postgres://localhost:5432/database up 2
 ```
 
-## Use in your Go project
+## Use in your Go github.com/Dikontay/hobbyfind/gateway
 
 * API is stable and frozen for this release (v3 & v4).
 * Uses [Go modules](https://golang.org/cmd/go/#hdr-Modules__module_versions__and_more) to manage dependencies.
@@ -174,7 +174,7 @@ Each migration has an up and down migration. [Why?](FAQ.md#why-two-separate-file
 ## Coming from another db migration tool?
 
 Check out [migradaptor](https://github.com/musinit/migradaptor/).
-*Note: migradaptor is not affiliated or supported by this project*
+*Note: migradaptor is not affiliated or supported by this github.com/Dikontay/hobbyfind/gateway*
 
 ## Versions
 

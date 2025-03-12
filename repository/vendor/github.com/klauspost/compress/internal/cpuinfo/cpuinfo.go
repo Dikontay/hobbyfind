@@ -1,7 +1,7 @@
 // Package cpuinfo gives runtime info about the current CPU.
 //
 // This is a very limited module meant for use internally
-// in this project. For more versatile solution check
+// in this github.com/Dikontay/hobbyfind/repository. For more versatile solution check
 // https://github.com/klauspost/cpuid.
 package cpuinfo
 

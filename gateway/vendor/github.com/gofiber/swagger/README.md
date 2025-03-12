@@ -17,7 +17,7 @@ go get -u github.com/swaggo/swag/cmd/swag
 # 1.16 or newer
 go install github.com/swaggo/swag/cmd/swag@latest
 ```
-3. Run the [Swag](https://github.com/swaggo/swag) in your Go project root folder which contains `main.go` file, [Swag](https://github.com/swaggo/swag) will parse comments and generate required files(`docs` folder and `docs/doc.go`).
+3. Run the [Swag](https://github.com/swaggo/swag) in your Go github.com/Dikontay/hobbyfind/gateway root folder which contains `main.go` file, [Swag](https://github.com/swaggo/swag) will parse comments and generate required files(`docs` folder and `docs/doc.go`).
 ```sh
 swag init
 ```
