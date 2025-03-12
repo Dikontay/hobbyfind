@@ -7,8 +7,7 @@ import (
 )
 
 type Params struct {
-	models.UserAdditionalInfo
-	models.AuthProperties
+	models.User
 }
 
 func (p Params) Validate() error {

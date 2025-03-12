@@ -4,7 +4,6 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/gofiber/fiber/v3"
-	"project/internal/domain/models"
 	"project/internal/services"
 )
 
@@ -26,13 +25,12 @@ func parseParams() fiber.Handler {
 func create() fiber.Handler {
 	return func(ctx fiber.Ctx) error {
 		params := ctx.Locals("params").(Params)
-
-		user := models.User{
-			AuthProperties:     params.AuthProperties,
-			UserAdditionalInfo: params.UserAdditionalInfo,
+		err := params.Validate()
+		if err != nil {
+			return ctx.Status(fiber.StatusBadRequest).JSON("invalid request params")
 		}
 
-		createdUser, err := services.Repository().CreateUser(user)
+		createdUser, err := services.Repository().CreateUser(params.User)
 		if err != nil {
 			return fmt.Errorf("failed to create user: %v", err)
 		}

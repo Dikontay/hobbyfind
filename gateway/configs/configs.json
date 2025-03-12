@@ -1,0 +1,14 @@
+{
+  "cassandra" : {
+"session" : {
+    "keyspace" : "hobbylink",
+    "host" : "localhost",
+    "port" :"9042" ,
+    "username" : "cassandra",
+    "password" : "cassandra"
+},
+    "migration" : {
+    "file_path" : "./migration"
+    }
+  }
+}
