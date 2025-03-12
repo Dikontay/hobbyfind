@@ -6,7 +6,7 @@
 
 CBOR is a [trusted alternative](https://www.rfc-editor.org/rfc/rfc8949.html#name-comparison-of-other-binary-) to JSON, MessagePack, Protocol Buffers, etc.&nbsp; CBOR is an Internet&nbsp;Standard defined by [IETF&nbsp;STD&nbsp;94 (RFC&nbsp;8949)](https://www.rfc-editor.org/info/std94) and is designed to be relevant for decades.
 
-`fxamacker/cbor` is used in github.com/Dikontay/hobbyfind/gateways by Arm Ltd., Cisco, EdgeX&nbsp;Foundry, Flow Foundation, Fraunhofer&#8209;AISEC, Kubernetes, Let's&nbsp;Encrypt (ISRG), Linux&nbsp;Foundation, Microsoft, Mozilla, Oasis&nbsp;Protocol, Tailscale, Teleport, [etc](https://github.com/fxamacker/cbor#who-uses-fxamackercbor).
+`fxamacker/cbor` is used in projects by Arm Ltd., Cisco, EdgeX&nbsp;Foundry, Flow Foundation, Fraunhofer&#8209;AISEC, Kubernetes, Let's&nbsp;Encrypt (ISRG), Linux&nbsp;Foundation, Microsoft, Mozilla, Oasis&nbsp;Protocol, Tailscale, Teleport, [etc](https://github.com/fxamacker/cbor#who-uses-fxamackercbor).
 
 See [Quick&nbsp;Start](#quick-start) and [Releases](https://github.com/fxamacker/cbor/releases/).  🆕 `UnmarshalFirst` and `DiagnoseFirst` can decode CBOR Sequences.  `cbor.MarshalToBuffer()` and `UserBufferEncMode` accepts user-specified buffer.
 
@@ -472,7 +472,7 @@ Default limits may need to be increased for systems handling very large data (e.
 
 ## Status
 
-v2.7.0 (June 23, 2024) adds features and improvements that help large github.com/Dikontay/hobbyfind/gateways (e.g. Kubernetes) use CBOR as an alternative to JSON and Protocol Buffers. Other improvements include speedups, improved memory use, bug fixes, new serialization options, etc.   It passed fuzz tests (5+ billion executions) and is production quality.
+v2.7.0 (June 23, 2024) adds features and improvements that help large projects (e.g. Kubernetes) use CBOR as an alternative to JSON and Protocol Buffers. Other improvements include speedups, improved memory use, bug fixes, new serialization options, etc.   It passed fuzz tests (5+ billion executions) and is production quality.
 
 For more details, see [release notes](https://github.com/fxamacker/cbor/releases).
 
@@ -549,7 +549,7 @@ geomean                                                      2.782              
 
 ## Who uses fxamacker/cbor
 
-`fxamacker/cbor` is used in github.com/Dikontay/hobbyfind/gateways by Arm Ltd., Berlin Institute of Health at Charité, Chainlink, Cisco, Confidential Computing Consortium, ConsenSys, Dapper&nbsp;Labs, EdgeX&nbsp;Foundry, F5, FIDO Alliance, Fraunhofer&#8209;AISEC, Kubernetes, Let's Encrypt (ISRG), Linux&nbsp;Foundation, Matrix.org, Microsoft, Mozilla, National&nbsp;Cybersecurity&nbsp;Agency&nbsp;of&nbsp;France (govt), Netherlands (govt), Oasis Protocol, Smallstep, Tailscale, Taurus SA, Teleport, TIBCO, and others.
+`fxamacker/cbor` is used in projects by Arm Ltd., Berlin Institute of Health at Charité, Chainlink, Cisco, Confidential Computing Consortium, ConsenSys, Dapper&nbsp;Labs, EdgeX&nbsp;Foundry, F5, FIDO Alliance, Fraunhofer&#8209;AISEC, Kubernetes, Let's Encrypt (ISRG), Linux&nbsp;Foundation, Matrix.org, Microsoft, Mozilla, National&nbsp;Cybersecurity&nbsp;Agency&nbsp;of&nbsp;France (govt), Netherlands (govt), Oasis Protocol, Smallstep, Tailscale, Taurus SA, Teleport, TIBCO, and others.
 
 `fxamacker/cbor` passed multiple confidential security assessments.  A [nonconfidential security assessment](https://github.com/veraison/go-cose/blob/v1.0.0-rc.1/reports/NCC_Microsoft-go-cose-Report_2022-05-26_v1.0.pdf) (prepared by NCC Group for Microsoft Corporation) includes a subset of fxamacker/cbor v2.4.0 in its scope.
 
@@ -621,7 +621,7 @@ For more information, see [decoding options](#decoding-options-1) and [tag optio
 
 ## Limitations
 
-If any of these limitations prevent you from using this library, please open an issue along with a link to your github.com/Dikontay/hobbyfind/gateway.
+If any of these limitations prevent you from using this library, please open an issue along with a link to your project.
 
 * CBOR `Undefined` (0xf7) value decodes to Go's `nil` value.  CBOR `Null` (0xf6) more closely matches Go's `nil`.
 * CBOR map keys with data types not supported by Go for map keys are ignored and an error is returned after continuing to decode remaining items.  
@@ -631,12 +631,12 @@ If any of these limitations prevent you from using this library, please open an 
 
 __Code coverage__ is always 95% or higher (with `go test -cover`) when tagging a release.
 
-__Coverage-guided fuzzing__ must pass billions of execs using before tagging a release.  Fuzzing is done using nonpublic code which may eventually get merged into this github.com/Dikontay/hobbyfind/gateway.  Until then, reports like OpenSSF&nbsp;Scorecard can't detect fuzz tests being used by this github.com/Dikontay/hobbyfind/gateway.
+__Coverage-guided fuzzing__ must pass billions of execs using before tagging a release.  Fuzzing is done using nonpublic code which may eventually get merged into this project.  Until then, reports like OpenSSF&nbsp;Scorecard can't detect fuzz tests being used by this project.
 
 <hr>
 
 ## Versions and API Changes
-This github.com/Dikontay/hobbyfind/gateway uses [Semantic Versioning](https://semver.org), so the API is always backwards compatible unless the major version number changes.  
+This project uses [Semantic Versioning](https://semver.org), so the API is always backwards compatible unless the major version number changes.  
 
 These functions have signatures identical to encoding/json and their API will continue to match `encoding/json` even after major new releases:  
 `Marshal`, `Unmarshal`, `NewEncoder`, `NewDecoder`, `(*Encoder).Encode`, and `(*Decoder).Decode`.
@@ -646,11 +646,11 @@ Exclusions from SemVer:
 - Newly added API in the master branch that has never been tagged in non-beta release.
 - If function parameters are unchanged, bug fixes that change behavior (e.g. return error for edge case was missed in prior version).  We try to highlight these in the release notes and add extended beta period.  E.g. [v2.5.0-beta](https://github.com/fxamacker/cbor/releases/tag/v2.5.0-beta) (Dec 2022) -> [v2.5.0](https://github.com/fxamacker/cbor/releases/tag/v2.5.0) (Aug 2023).
 
-This github.com/Dikontay/hobbyfind/gateway avoids breaking changes to behavior of encoding and decoding functions unless required to improve conformance with supported RFCs (e.g. RFC 8949, RFC 8742, etc.)  Visible changes that don't improve conformance to standards are typically made available as new opt-in settings or new functions.
+This project avoids breaking changes to behavior of encoding and decoding functions unless required to improve conformance with supported RFCs (e.g. RFC 8949, RFC 8742, etc.)  Visible changes that don't improve conformance to standards are typically made available as new opt-in settings or new functions.
 
 ## Code of Conduct 
 
-This github.com/Dikontay/hobbyfind/gateway has adopted the [Contributor Covenant Code of Conduct](CODE_OF_CONDUCT.md).  Contact [faye.github@gmail.com](mailto:faye.github@gmail.com) with any questions or comments.
+This project has adopted the [Contributor Covenant Code of Conduct](CODE_OF_CONDUCT.md).  Contact [faye.github@gmail.com](mailto:faye.github@gmail.com) with any questions or comments.
 
 ## Contributing
 
@@ -666,7 +666,7 @@ For the full text of the Security Policy, see [SECURITY.md](SECURITY.md).
 
 ## Acknowledgements
 
-Many thanks to all the contributors on this github.com/Dikontay/hobbyfind/gateway!
+Many thanks to all the contributors on this project!
 
 I'm especially grateful to Bastian Müller and Dieter Shirley for suggesting and collaborating on CBOR stream mode, and much more.
 
@@ -680,7 +680,7 @@ Special thanks to Laurence Lundblade and Jeffrey Yasskin for their help on IETF 
 
 Huge thanks to The Go Authors for creating a fun and practical programming language with batteries included!
 
-This library uses `x448/float16` which used to be included.  As a standalone package, `x448/float16` is useful to other github.com/Dikontay/hobbyfind/gateways as well.
+This library uses `x448/float16` which used to be included.  As a standalone package, `x448/float16` is useful to other projects as well.
 
 ## License
 

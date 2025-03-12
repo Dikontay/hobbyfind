@@ -215,11 +215,11 @@ See the benchmark in [benchmark_test.go](https://github.com/scylladb/gocqlx/blob
 
 Copyright (C) 2017 ScyllaDB
 
-This github.com/Dikontay/hobbyfind/gateway is distributed under the Apache 2.0 license. See the [LICENSE](https://github.com/scylladb/gocqlx/blob/master/LICENSE) file for details.
+This project is distributed under the Apache 2.0 license. See the [LICENSE](https://github.com/scylladb/gocqlx/blob/master/LICENSE) file for details.
 It contains software from:
 
-* [gocql github.com/Dikontay/hobbyfind/gateway](https://github.com/gocql/gocql), licensed under the BSD license
-* [sqlx github.com/Dikontay/hobbyfind/gateway](https://github.com/jmoiron/sqlx), licensed under the MIT license
+* [gocql project](https://github.com/gocql/gocql), licensed under the BSD license
+* [sqlx project](https://github.com/jmoiron/sqlx), licensed under the MIT license
 
 Apache®, Apache Cassandra® are either registered trademarks or trademarks of 
 the Apache Software Foundation in the United States and/or other countries. 

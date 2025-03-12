@@ -19,7 +19,7 @@ The email should include the issue ID and a short description of why it should b
 
 ### Disclosure Process
 
-Our github.com/Dikontay/hobbyfind/gateway uses the following disclosure process:
+Our project uses the following disclosure process:
 
 - Once the security report is received it is assigned a primary handler. This person coordinates the fix and release process.
 - The issue is confirmed and a list of affected software is determined.
@@ -29,7 +29,7 @@ Our github.com/Dikontay/hobbyfind/gateway uses the following disclosure process:
 - Three working days following this notification, the fixes are applied to the public repository and a new release is issued.
 - On the date that the fixes are applied, announcement is published in the issue.
 
-This process can take some time, especially when coordination is required with maintainers of other github.com/Dikontay/hobbyfind/gateways.
+This process can take some time, especially when coordination is required with maintainers of other projects.
 Every effort will be made to handle the bug in as timely a manner as possible, however it's important that we follow
 the process described above to ensure that disclosures are handled consistently.
 

@@ -2,7 +2,6 @@ package app
 
 import (
 	"fmt"
-	"github.com/Dikontay/hobbyfind/gateway/internal/endpoints/http/user"
 	"github.com/Dikontay/hobbyfind/gateway/internal/services"
 	"github.com/Dikontay/hobbyfind/gateway/utils"
 	"github.com/gofiber/fiber/v3"

@@ -3,6 +3,7 @@ module github.com/Dikontay/hobbyfind/gateway
 go 1.23.4
 
 require (
+	github.com/Dikontay/hobbyfind/entities v0.0.0-20250312124427-d215aa701d73
 	github.com/gocql/gocql v1.7.0
 	github.com/gofiber/fiber/v3 v3.0.0-beta.4
 	github.com/gofiber/swagger v1.1.1

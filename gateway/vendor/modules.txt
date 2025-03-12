@@ -1,3 +1,6 @@
+# github.com/Dikontay/hobbyfind/entities v0.0.0-20250312124427-d215aa701d73
+## explicit; go 1.22.3
+github.com/Dikontay/hobbyfind/entities
 # github.com/KyleBanks/depth v1.2.1
 ## explicit
 github.com/KyleBanks/depth

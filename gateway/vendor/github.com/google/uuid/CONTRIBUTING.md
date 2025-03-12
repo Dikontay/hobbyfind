@@ -1,6 +1,6 @@
 # How to contribute
 
-We definitely welcome patches and contribution to this github.com/Dikontay/hobbyfind/gateway!
+We definitely welcome patches and contribution to this project!
 
 ### Tips
 
@@ -23,4 +23,4 @@ For tips on how to work with `release-please`, see its documentation.
 In order to protect both you and ourselves, you will need to sign the
 [Contributor License Agreement](https://cla.developers.google.com/clas).
 
-You may have already signed it for other Google github.com/Dikontay/hobbyfind/gateways.
+You may have already signed it for other Google projects.

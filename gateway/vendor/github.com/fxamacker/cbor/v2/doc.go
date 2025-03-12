@@ -1,5 +1,5 @@
 // Copyright (c) Faye Amacker. All rights reserved.
-// Licensed under the MIT License. See LICENSE in the github.com/Dikontay/hobbyfind/gateway root for license information.
+// Licensed under the MIT License. See LICENSE in the project root for license information.
 
 /*
 Package cbor is a modern CBOR codec (RFC 8949 & RFC 7049) with CBOR tags,

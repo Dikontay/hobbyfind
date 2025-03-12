@@ -36,7 +36,7 @@ connections per physical server.
 
 [Tricks with byte buffers](#tricks-with-byte-buffers)
 
-[Related github.com/Dikontay/hobbyfind/gateways](#related-github.com/Dikontay/hobbyfind/gateways)
+[Related projects](#related-projects)
 
 [FAQ](#faq)
 
@@ -523,10 +523,10 @@ This is an **unsafe** way, the result string and `[]byte` buffer share the same 
 
 **Please make sure not to modify the bytes in the `[]byte` buffer if the string still survives!**
 
-## Related github.com/Dikontay/hobbyfind/gateways
+## Related projects
 
   * [fasthttp](https://github.com/fasthttp) - various useful
-    helpers for github.com/Dikontay/hobbyfind/gateways based on fasthttp.
+    helpers for projects based on fasthttp.
   * [fasthttp-routing](https://github.com/qiangxue/fasthttp-routing) - fast and
     powerful routing package for fasthttp servers.
   * [http2](https://github.com/dgrr/http2) - HTTP/2 implementation for fasthttp.
