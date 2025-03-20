@@ -6,11 +6,13 @@ import (
 )
 
 type Params struct {
-	Username string `json:"username"`
-	Email    string `json:"email"`
-	Password string `json:"password"`
-	Phone    string `json:"phone"`
-	Role     string `json:"role"`
+	FullName    string `json:"full_name"`
+	Username    string `json:"username"`
+	Email       string `json:"email"`
+	Password    string `json:"password"`
+	Phone       string `json:"phone"`
+	Role        string `json:"role"`
+	GoogleToken string `json:"google_token,omitempty"`
 }
 
 func (p *Params) Validate() error {

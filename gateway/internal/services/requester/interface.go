@@ -5,5 +5,5 @@ import (
 )
 
 type Service interface {
-	CreateUser(user entities.User) (*entities.User, *int64, error)
+	CreateUser(user entities.User) (*entities.User, error)
 }
