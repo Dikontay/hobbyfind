@@ -4,8 +4,8 @@ import "github.com/gofiber/fiber/v3"
 
 func Endpoint() *fiber.Route {
 	return &fiber.Route{
-		Method:   "POST",
+		Method:   "GET",
 		Handlers: Handlers,
-		Path:     "/users/:id",
+		Path:     "/read/:id",
 	}
 }

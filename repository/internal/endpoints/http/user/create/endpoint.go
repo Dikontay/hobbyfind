@@ -6,6 +6,6 @@ func Endpoint() *fiber.Route {
 	return &fiber.Route{
 		Method:   "POST",
 		Handlers: Handlers,
-		Path:     "/users",
+		Path:     "/create",
 	}
 }

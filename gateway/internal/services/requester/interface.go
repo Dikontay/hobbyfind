@@ -6,4 +6,5 @@ import (
 
 type Service interface {
 	CreateUser(user entities.User) (*entities.User, error)
+	ListUsers(user entities.User) ([]entities.User, error)
 }

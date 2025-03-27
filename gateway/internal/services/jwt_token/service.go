@@ -33,5 +33,6 @@ func (s *service) GenerateToken(creds entities.User) (string, error) {
 		"role":  creds.Role,
 		"exp":   time.Now().Add(time.Duration(s.configs.JWTExpireTimeInHours) * time.Hour).Unix(),
 	})
+
 	return token.SignedString(s.configs.JWTSecretKey)
 }

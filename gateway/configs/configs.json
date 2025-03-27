@@ -2,5 +2,8 @@
   "jwt_token" : {
     "secret_key": "",
     "expire_time_in_hours": ""
+  },
+  "requester" : {
+      "clients_repository_url" : "{$CLIENTS_REPO_URL}/api/users"
   }
 }

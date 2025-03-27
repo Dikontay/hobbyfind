@@ -89,8 +89,78 @@ func (s service) DeleteUser(id string) error {
 }
 
 func (s service) ListUsers(user models.User) ([]*models.User, error) {
-	//TODO implement me
-	panic("implement me")
+	queryBuilder := qb.Select("users").Columns("id", "name", "email", "fullname", "phone", "password", "created_at")
+
+	dbSession := s.session.GetSession()
+	// Динамически добавляем условия фильтрации
+	if user.ID != "" {
+		queryBuilder = queryBuilder.Where(qb.Eq("id"))
+	}
+	if user.Username != "" {
+		queryBuilder = queryBuilder.Where(qb.Eq("name"))
+	}
+	if user.Email != "" {
+		queryBuilder = queryBuilder.Where(qb.Eq("email"))
+	}
+	if user.Fullname != "" {
+		queryBuilder = queryBuilder.Where(qb.Eq("fullname"))
+	}
+	if user.Phone != "" {
+		queryBuilder = queryBuilder.Where(qb.Eq("phone"))
+	}
+
+	// Генерируем CQL-запрос
+	stmt, names := queryBuilder.ToCql()
+
+	// Создаем слайс для хранения результатов
+	var users []*models.User
+
+	// Создаем новый запрос с привязкой переданных параметров
+	query := dbSession.Query(stmt, names)
+	bindParams := []interface{}{}
+
+	if user.ID != "" {
+		bindParams = append(bindParams, user.ID)
+	}
+	if user.Username != "" {
+		bindParams = append(bindParams, user.Username)
+	}
+	if user.Email != "" {
+		bindParams = append(bindParams, user.Email)
+	}
+	if user.Fullname != "" {
+		bindParams = append(bindParams, user.Fullname)
+	}
+	if user.Phone != "" {
+		bindParams = append(bindParams, user.Phone)
+	}
+
+	// Привязываем параметры к запросу
+	query.Bind(bindParams...)
+
+	// Выполняем запрос
+	iter := query.Iter()
+
+	// Итерация по результатам запроса
+	var copyUser models.User
+	for iter.Scan(&copyUser.ID,
+		&copyUser.Username,
+		&copyUser.Email,
+		&copyUser.Fullname,
+		&copyUser.Phone,
+		&copyUser.Password,
+		&copyUser.CreatedAt) {
+		// Создаем копию объекта пользователя, чтобы избежать перезаписи данных
+		u := copyUser
+		users = append(users, &u)
+	}
+
+	// Проверяем ошибки итерации
+	if err := iter.Close(); err != nil {
+		return nil, fmt.Errorf("failed to list users: %v", err)
+	}
+
+	return users, nil
 }
 
 func (s service) Stop() {

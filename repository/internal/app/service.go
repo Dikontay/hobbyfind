@@ -24,7 +24,7 @@ func (s service) SetupRoutes() {
 
 	userRoutes := user.GetRoutes()
 	for _, route := range userRoutes {
-		s.app.Group(s.configs.BasePath).Group(route.Path, route.Handlers...)
+		s.app.Group(fmt.Sprintf("%s/users", s.configs.BasePath)).Group(route.Path, route.Handlers...)
 	}
 	return
 }

@@ -19,10 +19,11 @@ func NewService(configs Configs) Service {
 }
 
 func (s service) CreateUser(user entities.User) (*entities.User, error) {
+	result := new(entities.User)
 	resp, err := s.httpClient.R().
 		SetHeader("Content-Type", "application/json").
 		SetBody(user).
-		SetResult(&entities.User{}). // Автоматически маппит JSON в структуру
+		SetResult(result). // Автоматически маппит JSON в структуру
 		Post(s.configs.UserRepositoryUrl)
 
 	if err != nil {
@@ -34,8 +35,23 @@ func (s service) CreateUser(user entities.User) (*entities.User, error) {
 		return nil, fmt.Errorf("clients repository responded with %d and error %e", resp.StatusCode(), err)
 	}
 
-	// Получаем созданного пользователя из ответа
-	createdUser := resp.Result().(*entities.User)
-	return createdUser, nil
+	return result, nil
+
+}
+
+func (s service) ListUsers(user entities.User) ([]entities.User, error) {
+	var result []entities.User
+	resp, err := s.httpClient.R().
+		SetHeader("Content-Type", "application/json").
+		SetBody(user).
+		SetResult(result). // Автоматически маппит JSON в структуру
+		Post(fmt.Sprintf("%s/list", s.configs.UserRepositoryUrl))
+	if err != nil {
+		return nil, err
+	}
+	if resp.StatusCode() != 200 {
+		return nil, fmt.Errorf("clients repository responded with %d and error %e", resp.StatusCode(), err)
+	}
+	return result, nil
 
 }
