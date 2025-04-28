@@ -1,0 +1,13 @@
+{
+  "postgres": {
+    "connection" : {
+      "host": "localhost",
+      "user" : "postgres",
+        "password" : "postgres",
+        "port" : 5432,
+        "db" : "postgres",
+      "schema" : "public",
+        "ssl_mode" : "require"
+    }
+  }
+}

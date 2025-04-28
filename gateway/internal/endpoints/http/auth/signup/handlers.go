@@ -32,7 +32,15 @@ func Handler() fiber.Handler {
 			return ctx.Status(fiber.StatusInternalServerError).SendString("failed to create user")
 		}
 
-		return ctx.JSON(createdUser)
+		token, err := services.JWTToken().GenerateToken(*createdUser)
+		if err != nil {
+			return ctx.Status(fiber.StatusInternalServerError).JSON(fiber.Map{"error": "Failed to generate token"})
+		}
+
+		return ctx.JSON(fiber.Map{
+			"user":  createdUser,
+			"token": token,
+		})
 
 	}
 
